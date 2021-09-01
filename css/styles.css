@@ -143,7 +143,7 @@ nav .icon-burger .line {
   nav .links {
     float: none;
     position: fixed;
-    z-index: 9;
+    z-index: 1000;
     left: 0;
     right: 0;
     top: 110px;
@@ -182,8 +182,6 @@ nav .icon-burger .line {
     opacity: 0;
   }
 }
-
-/* ----------- Home ---------------*/
 
 /* ----------- About Us ----------- */
 
