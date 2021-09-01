@@ -38,54 +38,63 @@ body {
   }
 }
 
-/* ----------- Home Page ----------- */
-
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
-    url(../images/bg.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/* ----------- Navigation Bar ----------- */
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.1rem 4rem;
-  background-color: white;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 110px;
+  background-color: #fff;
   box-shadow: 0 8px 8px -10px #000;
+}
+
+nav .logo {
+  float: left;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  padding: 0 2%;
 }
 
 nav img {
   width: 100px;
 }
 
-.nav-links {
-  flex: 1;
-  text-align: right;
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.nav-links ul li {
+nav .links li {
   list-style: none;
-  display: inline-block;
-  padding: 8px 0px;
 }
 
-.nav-links ul li a {
-  padding: 8px 15px;
+nav .links a {
+  display: block;
   color: #433f40;
-  text-decoration: none;
+  padding: 8px 15px;
   font-size: 18px;
   border-radius: 25px;
+  text-decoration: none;
   position: relative;
   overflow: hidden;
   z-index: 1;
   transition: color 150ms ease-in-out;
 }
-.nav-links ul li a:after {
+
+nav .links a:after {
   content: "";
   border-radius: 25px;
   position: absolute;
@@ -99,101 +108,97 @@ nav img {
   z-index: -1;
   transition: width 0.3s ease-in-out;
 }
-.nav-links ul li a:hover {
+
+nav .links a:hover {
   color: #fff;
 }
-.nav-links ul li a:hover:after {
+
+nav .links a:hover:after {
   width: 110%;
 }
 
-nav .far,
-nav .fas {
-  display: none;
-}
-
-.text-box {
-  width: 70%;
-  color: aliceblue;
+#nav-toggle {
   position: absolute;
+  top: -110px;
+}
+
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 50px;
-  font-weight: 100;
-  text-transform: uppercase;
+  transform: translateY(-50%);
 }
 
-@media (max-width: 700px) {
-  nav {
-    padding: 0.5rem 1rem;
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #bc0b0b;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 110px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
   }
 
-  nav img {
-    width: 70px;
+  nav .links a {
+    font-size: 20px;
+    color: #fff;
   }
 
-  .nav-links {
-    position: absolute;
-    background: #bc0b0b;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
+  nav :checked ~ .links {
+    bottom: 0;
   }
 
-  .nav-links ul {
-    padding: 30px;
-  }
-
-  .nav-links ul li {
-    padding: 12px 0px;
+  nav .icon-burger {
     display: block;
   }
 
-  .nav-links ul li a {
-    padding: 8px 10px;
-    color: aliceblue;
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
   }
 
-  nav .far {
-    color: aliceblue;
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
   }
 
-  nav .fas {
-    color: #bc0b0b;
-  }
-
-  nav .far,
-  nav .fas {
-    display: block;
-    margin: 10px;
-    font-size: 30px;
-    cursor: pointer;
-  }
-
-  .text-box {
-    font-size: 35px;
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
   }
 }
+
+/* ----------- Home ---------------*/
 
 /* ----------- About Us ----------- */
 
-.about p {
+#about p {
   font-size: 18px;
   font-weight: 300;
   padding: 10px;
 }
 
 @media (max-width: 700px) {
-  .about {
+  #about {
     width: 85%;
   }
 
-  .about p {
+  #about p {
     font-size: 16px;
     padding: 10px;
   }
@@ -382,21 +387,21 @@ nav .fas {
 }
 /* ---------- Clients ------------ */
 
-.clients .container {
+#clients .container {
   width: 80%;
   margin: auto;
   text-align: center;
   padding: 50px 0px;
 }
 
-.clients p {
+#clients p {
   font-size: 32px;
   font-weight: 500;
   padding: 60px 20px;
 }
 
 @media (max-width: 700px) {
-  .clients p {
+  #clients p {
     font-size: 24px;
   }
 }
