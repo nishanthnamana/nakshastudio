@@ -335,6 +335,12 @@ nav .icon-burger .line {
   }
 }
 
+@media (max-width: 700px) {
+  .scroll-down {
+    bottom: 65px;
+  }
+}
+
 /* ----------- About Us ----------- */
 
 #about p {
@@ -374,10 +380,6 @@ nav .icon-burger .line {
   height: 100%;
   object-fit: cover;
   transition: all 2s ease-out;
-}
-
-.gallery-item img:hover {
-  transform: scale(1.2);
 }
 
 .gallery-title {
@@ -475,6 +477,10 @@ nav .icon-burger .line {
 }
 
 @media only screen and (min-width: 1200px) {
+  .gallery-item img:hover {
+    transform: scale(1.2);
+  }
+
   .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
