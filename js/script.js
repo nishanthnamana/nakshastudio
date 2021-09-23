@@ -23,7 +23,7 @@ $(".slideshow-left")
     verticalSwiping: true,
     arrows: false,
     infinite: true,
-    dots: true,
+    dots: false,
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 1500,

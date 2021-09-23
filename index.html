@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
+    <link rel="stylesheet" href="css/animate.css">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
@@ -40,20 +42,22 @@
     ></script>
   </head>
   <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
     <nav>
       <input id="nav-toggle" type="checkbox">
-      <div class="logo">        <a href="index.html">
+      <div class="logo link">        <a href="index.html">
         <img src="images/logo.jpeg" />
       </a></div>
       <ul class="links">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#competitions">COMPETITIONS</a></li>
-        <li><a href="#clients">CLIENTS</a></li>
-        <li><a href="#contact-us">CONTACT US</a></li>
+        <li><a class="smooth-scroll link" href="#home">HOME</a></li>
+        <li><a class="smooth-scroll link" href="#about">ABOUT</a></li>
+        <li><a class="smooth-scroll link" href="#residential">RESIDENTIAL</a></li>
+        <li><a class="smooth-scroll link" href="#commercial">COMMERCIAL</a></li>
+        <li><a class="smooth-scroll link" href="#competitions">COMPETITIONS</a></li>
+        <li><a class="smooth-scroll link" href="#clients">CLIENTS</a></li>
+        <li><a class="smooth-scroll link" href="#contact-us">CONTACT US</a></li>
       </ul>
       <label for="nav-toggle" class="icon-burger">
         <div class="line"></div>
@@ -95,50 +99,54 @@
           <div class="item">Architecture</div>
         </div>
       </div>
+      <a href="#about" class="scroll"><div class="scroll-down">
+      </div></a>
     </section>
 
     <section id="about">
       <div class="container">
-        <h1 class="content-title">
+        <h1 class="content-title wow animated fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
           ABOUT <strong>NAKSHA</strong></span>
         </h1>
-        <p>
-          NAKSHASTUDIO is an established designing based firm in DELHI. We
-          provide specialized assistance in commercial, residential,
-          hospitality, and institutional projects and also venture executional
-          and project management services.
-        </p>
-        <p>
-          Our goal is to provide maximum comfort and visual appeal for our
-          client, conceptualizing parallelly with their demands. Here in
-          NAKSHASTUDIO our team extensively takes every project through a
-          creative process performing various discussions, studies, research and
-          applications. We believe the back and forth process of any design
-          project makes it more refined and efficient.
-        </p>
-        <p>
-          Every project has its own needs and requirements and it's our job to
-          provide our clients their surreal utopia.
-        </p>
+        <div class="wow animated fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+          <p>
+            NAKSHASTUDIO is an established designing based firm in DELHI. We
+            provide specialized assistance in commercial, residential,
+            hospitality, and institutional projects and also venture executional
+            and project management services.
+          </p>
+          <p>
+            Our goal is to provide maximum comfort and visual appeal for our
+            client, conceptualizing parallelly with their demands. Here in
+            NAKSHASTUDIO our team extensively takes every project through a
+            creative process performing various discussions, studies, research and
+            applications. We believe the back and forth process of any design
+            project makes it more refined and efficient.
+          </p>
+          <p>
+            Every project has its own needs and requirements and it's our job to
+            provide our clients their surreal utopia.
+          </p>
+      </div>
       </div>
     </section>
 
     <section id="portfolio">
-      <div class="projects residential_projects">
+      <div class="projects residential_projects" id="residential">
         <div class="container">
-          <h1 class="content-title">PROJECTS</h1>
+          <h1 class="content-title wow animated fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">PROJECTS</h1>
 
           <div class="gallery">
-            <div class="gallery-item-1 gallery-title">
+            <div class="gallery-item-1 gallery-title wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <p><span>R</span>ESIDENTIAL</p>
             </div>
-            <div class="gallery-item-2 gallery-item">
+            <div class="gallery-item-2 gallery-item wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="residential-gallery-02"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/residential/2_1.jpeg"
               >
-                <img class="rounded" src="images/residential/2_1.jpeg" />
+                <img class="rounded link" src="images/residential/2_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">The Dinning</h3>
                   <p class="gallery-content-text">Peaceful dining areas</p>
@@ -149,16 +157,16 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/residential/2_2.jpeg"
               >
-                <img class="rounded" src="images/residential/2_2.jpeg" />
+                <img class="rounded link" src="images/residential/2_2.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-3">
+            <div class="gallery-item gallery-item-3 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="residential-gallery-03"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/residential/3_1.jpeg"
               >
-                <img class="rounded" src="images/residential/3_1.jpeg" />
+                <img class="rounded link" src="images/residential/3_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">The Modern Kitchens</h3>
                   <p class="gallery-content-text">Updated modern kitchens</p>
@@ -169,16 +177,16 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/residential/3_5.jpeg"
               >
-                <img class="rounded" src="images/residential/3_5.jpeg" />
+                <img class="rounded link" src="images/residential/3_5.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-4">
+            <div class="gallery-item gallery-item-4 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="residential-gallery-04"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/residential/4_1.jpeg"
               >
-                <img class="rounded" src="images/residential/4_1.jpeg" />
+                <img class="rounded link" src="images/residential/4_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">The Stairs</h3>
                   <p class="gallery-content-text">
@@ -191,23 +199,23 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/residential/4_2.jpeg"
               >
-                <img class="rounded" src="images/residential/4_2.jpeg" />
+                <img class="rounded link" src="images/residential/4_2.jpeg" />
               </a>
               <a
                 data-fancybox="residential-gallery-04"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/residential/4_3.jpeg"
               >
-                <img class="rounded" src="images/residential/4_3.jpeg" />
+                <img class="rounded link" src="images/residential/4_3.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-5">
+            <div class="gallery-item gallery-item-5 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="residential-gallery-05"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/residential/5_1.jpeg"
               >
-                <img class="rounded" src="images/residential/5_1.jpeg" />
+                <img class="rounded link" src="images/residential/5_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">The Lounge Area</h3>
                   <p class="gallery-content-text">Modern places to Social</p>
@@ -218,16 +226,16 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/residential/5_2.jpeg"
               >
-                <img class="rounded" src="images/residential/5_2.jpeg" />
+                <img class="rounded link" src="images/residential/5_2.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-6">
+            <div class="gallery-item gallery-item-6 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="residential-gallery-06"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/residential/6_1.jpeg"
               >
-                <img class="rounded" src="images/residential/6_1.jpeg" />
+                <img class="rounded link" src="images/residential/6_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">The Classic Kitchens</h3>
                   <p class="gallery-content-text">
@@ -240,7 +248,7 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/residential/6_2.jpeg"
               >
-                <img class="rounded" src="images/residential/6_2.jpeg" />
+                <img class="rounded link" src="images/residential/6_2.jpeg" />
               </a>
             </div>
           </div>
@@ -249,27 +257,27 @@
 
       <div class="quotes">
         <div class="wrapper">
-            <p class="quote">
+            <p class="quote wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
               <strong>Architecture</strong> should speak of its
               <strong>time and place</strong>.
             </p>
-            <p class="author">- Frank Ghery</p>
+            <p class="author wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">- Frank Ghery</p>
         </div>
       </div>
 
-      <div class="projects commercial_projects">
+      <div class="projects commercial_projects" id="commercial">
         <div class="container">
           <div class="gallery">
-            <div class="gallery-item-1 gallery-title">
+            <div class="gallery-item-1 gallery-title wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <p><span>C</span>OMMERCIAL</p>
             </div>
-            <div class="gallery-item-2 gallery-item">
+            <div class="gallery-item-2 gallery-item wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="commercial-gallery-02"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/2_1.jpeg"
               >
-                <img class="rounded" src="images/commercial/2_1.jpeg" />
+                <img class="rounded link" src="images/commercial/2_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">Modern Corridors</h3>
                   <p class="gallery-content-text">
@@ -282,30 +290,30 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/2_2.jpeg"
               >
-                <img class="rounded" src="images/commercial/2_2.jpeg" />
+                <img class="rounded link" src="images/commercial/2_2.jpeg" />
               </a>
               <a
                 data-fancybox="commercial-gallery-02"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/2_3.jpeg"
               >
-                <img class="rounded" src="images/commercial/2_3.jpeg" />
+                <img class="rounded link" src="images/commercial/2_3.jpeg" />
               </a>
               <a
                 data-fancybox="commercial-gallery-02"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/2_4.jpeg"
               >
-                <img class="rounded" src="images/commercial/2_4.jpeg" />
+                <img class="rounded link" src="images/commercial/2_4.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-3">
+            <div class="gallery-item gallery-item-3 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="commercial-gallery-03"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/3_1.jpeg"
               >
-                <img class="rounded" src="images/commercial/3_1.jpeg" />
+                <img class="rounded link" src="images/commercial/3_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">Innovative workspaces</h3>
                   <p class="gallery-content-text">
@@ -318,23 +326,23 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/3_2.jpeg"
               >
-                <img class="rounded" src="images/commercial/3_2.jpeg" />
+                <img class="rounded link" src="images/commercial/3_2.jpeg" />
               </a>
               <a
                 data-fancybox="commercial-gallery-03"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/3_3.jpeg"
               >
-                <img class="rounded" src="images/commercial/3_3.jpeg" />
+                <img class="rounded link" src="images/commercial/3_3.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-4">
+            <div class="gallery-item gallery-item-4 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="commercial-gallery-04"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/4_1.jpeg"
               >
-                <img class="rounded" src="images/commercial/4_1.jpeg" />
+                <img class="rounded link" src="images/commercial/4_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">Scenic Entrances</h3>
                   <p class="gallery-content-text">
@@ -347,16 +355,16 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/4_2.jpeg"
               >
-                <img class="rounded" src="images/commercial/4_2.jpeg" />
+                <img class="rounded link" src="images/commercial/4_2.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-5">
+            <div class="gallery-item gallery-item-5 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="commercial-gallery-05"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/5_1.jpeg"
               >
-                <img class="rounded" src="images/commercial/5_1.jpeg" />
+                <img class="rounded link" src="images/commercial/5_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">Vintage Libraries</h3>
                   <p class="gallery-content-text">Provides mindful of peace</p>
@@ -367,16 +375,16 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/5_2.jpeg"
               >
-                <img class="rounded" src="images/commercial/5_2.jpeg" />
+                <img class="rounded link" src="images/commercial/5_2.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-6">
+            <div class="gallery-item gallery-item-6 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="commercial-gallery-06"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/6_1.jpeg"
               >
-                <img class="rounded" src="images/commercial/6_1.jpeg" />
+                <img class="rounded link" src="images/commercial/6_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">Privacy Areas</h3>
                   <p class="gallery-content-text">
@@ -389,14 +397,14 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/6_2.jpeg"
               >
-                <img class="rounded" src="images/commercial/6_2.jpeg" />
+                <img class="rounded link" src="images/commercial/6_2.jpeg" />
               </a>
               <a
                 data-fancybox="commercial-gallery-06"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/commercial/6_3.jpeg"
               >
-                <img class="rounded" src="images/commercial/6_3.jpeg" />
+                <img class="rounded link" src="images/commercial/6_3.jpeg" />
               </a>
             </div>
           </div>
@@ -405,26 +413,26 @@
 
       <div class="quotes">
         <div class="wrapper">
-            <p class="quote">
+            <p class="quote wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
               Any architectural work that does not express serenity is an error.
             </p>
-            <p class="author">- Luis Barragán</p>
+            <p class="author wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">- Luis Barragán</p>
         </div>
       </div>
 
-      <div class="projects competition_projects">
+      <div class="projects competition_projects" id="competitions">
         <div class="container">
           <div class="gallery">
-            <div class="gallery-item-1 gallery-title">
+            <div class="gallery-item-1 gallery-title wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <p><span>C</span>OMPETITIONS</p>
             </div>
-            <div class="gallery-item-2 gallery-item">
+            <div class="gallery-item-2 gallery-item wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="competition-gallery-02"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/competitions/2_1.jpeg"
               >
-                <img class="rounded" src="images/competitions/2_1.jpeg" />
+                <img class="rounded link" src="images/competitions/2_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">Our Hardworking Nature</h3>
                   <p class="gallery-content-text">
@@ -437,16 +445,16 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/competitions/2_2.jpeg"
               >
-                <img class="rounded" src="images/competitions/2_2.jpeg" />
+                <img class="rounded link" src="images/competitions/2_2.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-3">
+            <div class="gallery-item gallery-item-3 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="competition-gallery-03"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/competitions/3_1.jpeg"
               >
-                <img class="rounded" src="images/competitions/3_1.jpeg" />
+                <img class="rounded link" src="images/competitions/3_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">Pixel Perfect Perfection</h3>
                   <p class="gallery-content-text">We strive for perfection</p>
@@ -457,16 +465,16 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/competitions/3_2.jpeg"
               >
-                <img class="rounded" src="images/competitions/3_2.jpeg" />
+                <img class="rounded link" src="images/competitions/3_2.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-4">
+            <div class="gallery-item gallery-item-4 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="competition-gallery-04"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/competitions/4_1.jpeg"
               >
-                <img class="rounded" src="images/competitions/4_1.jpeg" />
+                <img class="rounded link" src="images/competitions/4_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">Incredible Planning</h3>
                   <p class="gallery-content-text">
@@ -479,23 +487,23 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/competitions/4_2.jpeg"
               >
-                <img class="rounded" src="images/competitions/4_2.jpeg" />
+                <img class="rounded link" src="images/competitions/4_2.jpeg" />
               </a>
               <a
                 data-fancybox="competition-gallery-04"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/competitions/4_3.jpeg"
               >
-                <img class="rounded" src="images/competitions/4_3.jpeg" />
+                <img class="rounded link" src="images/competitions/4_3.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-5">
+            <div class="gallery-item gallery-item-5 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="competition-gallery-05"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/competitions/5_1.jpeg"
               >
-                <img class="rounded" src="images/competitions/5_1.jpeg" />
+                <img class="rounded link" src="images/competitions/5_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">Foreseeing Nature</h3>
                   <p class="gallery-content-text">
@@ -508,16 +516,16 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/competitions/5_2.jpeg"
               >
-                <img class="rounded" src="images/competitions/5_2.jpeg" />
+                <img class="rounded link" src="images/competitions/5_2.jpeg" />
               </a>
             </div>
-            <div class="gallery-item gallery-item-6">
+            <div class="gallery-item gallery-item-6 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <a
                 data-fancybox="competition-gallery-06"
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/competitions/6_1.jpeg"
               >
-                <img class="rounded" src="images/competitions/6_1.jpeg" />
+                <img class="rounded link" src="images/competitions/6_1.jpeg" />
                 <div class="gallery-content-details">
                   <h3 class="gallery-content-title">Supervision</h3>
                   <p class="gallery-content-text">
@@ -530,7 +538,7 @@
                 data-caption="Here goes the detailed discription of the Image"
                 href="images/competitions/6_2.jpeg"
               >
-                <img class="rounded" src="images/competitions/6_2.jpeg" />
+                <img class="rounded link" src="images/competitions/6_2.jpeg" />
               </a>
             </div>
           </div>
@@ -540,8 +548,8 @@
 
     <section id="clients">
       <div class="container">
-        <h1 class="content-title">CLIENTS</h1>
-        <div class="owl-carousel">
+        <h1 class="content-title wow animated fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">CLIENTS</h1>
+        <div class="owl-carousel wow animated fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
           <p class="item">Client 1</p>
           <p class="item">Client 2</p>
           <p class="item">Client 3</p>
@@ -557,7 +565,7 @@
       <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div id="contact-left">
+              <div id="contact-left" class="wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
                 <h3> NAKSHA STUDIO </h3>
                   <p>NAKSHASTUDIO is an established designing based firm in DELHI. We
                     provide specialized assistance in commercial, residential,
@@ -565,13 +573,31 @@
                     and project management services.</p>
 
                   <div id="contact-info">
-                    <address>
-                      <strong>Address:</strong>
-                      <p>15/5 Okhla Vihar<br>
-                      Jamia Nagar, New Delhi<br>
-                      India 110025</p>
-                    </address>
-                    <div id="phone-fax-email">
+                    <p class='title'>Address:</p>
+                    <div class="col-lg-4 col-md-6">
+                      <address>
+                        <p><span class='address-title'>Main Delhi Office</span><br>
+                          J-3/297, Ground Floor,<br> DDA flats
+                        Kalkaji,<br>
+                        New Delhi, India 110025</p>
+                      </address></div>
+                    <div class="col-lg-4 col-md-6">
+                      <address>
+                        <p><span class='address-title'>Mumbai Branch Office</span><br>
+                          Elite N, No: 1102,<br>
+                          Lakeshore Greens, Palava Toloja Bypass Rd, <br>
+                          Dombivali East, Thane,<br>
+                          Maharashtra, India 421201</p>
+                      </address>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <address>
+                        <p><span class='address-title'>Bhopal Branch Office</span><br>
+                          B-12, Sector B, Shahpura<br>
+                          Bhupal, India 462016</p>
+                      </address>
+                    </div>
+                    <div id="phone-fax-email" class="col-md-12">
                       <p>
                         <strong>Phone 1: </strong><span>+(91) 98999 89791</span> <br>
                         <strong>Phone 2: </strong><span>+(91) 81783 42158</span> <br>
@@ -582,7 +608,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div id="contact-right">
+              <div id="contact-right" class="wow animated fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
                 <h3>CONTACT US</h3>
                   <form action="#">
                     <input type="text" name="fullname" placeholder="Full Name" class="form-control">
@@ -600,7 +626,7 @@
 
     <section class="google-map">
       <div class="container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.4643355756743!2d77.28767571554093!3d28.55581628244814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce51a118498c1%3A0xbbfd076d8c5586f!2sNakshastudio_Architecture%20and%20Interiors!5e0!3m2!1sen!2sus!4v1629868729905!5m2!1sen!2sus" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.1966357106444!2d77.25291651554053!3d28.533808782456823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1624425a20f%3A0x2c80c48095a654d1!2sDDA%20Flats%2C%20Greater%20Kailash%20II%2C%20Kalkaji%2C%20New%20Delhi%2C%20Delhi%20110019%2C%20India!5e0!3m2!1sen!2sus!4v1632367000602!5m2!1sen!2sus" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
 
@@ -618,7 +644,9 @@
     </footer>
 
     <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>

@@ -45,13 +45,12 @@
   height: 100%;
 }
 .slideshow .slick-dots {
-  position: fixed;
+  position: absolute;
   z-index: 100;
   width: 40px;
   height: auto;
-  bottom: auto;
   top: 50%;
-  right: 0;
+  right: 0.5%;
   transform: translateY(-50%);
   left: auto;
   color: #fff;
@@ -105,7 +104,7 @@
   padding: 2%;
   transform: translate(-50%, -50%);
   z-index: 100;
-  font-size: 80px;
+  font-size: 60px;
   width: 60vw;
   text-align: center;
   color: #fff;
@@ -117,8 +116,9 @@
   background-color: rgba(0, 0, 0, 0.8);
   line-height: 0.8;
 }
-@media (max-width: 767px) {
+@media (max-width: 968px) {
   .slideshow-text {
-    font-size: 40px;
+    width: 80vw;
+    font-size: 30px;
   }
 }
